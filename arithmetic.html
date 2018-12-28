@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>arithmetic
+
+<script>
+function ari()
+{
+var x=document.getElementById("fnum").value;
+var y=document.getElementById("snum").value;
+var z=document.getElementById("arth").value;
+ var x1=parseInt(x);
+var x2=parseInt(y);
+
+if(z=="add")
+{
+var z=x1+y1;
+}
+else if(z=="mul")
+var z=x1*y1;
+}
+else if(z=="sub")
+{
+var z=x1-y1;
+}
+else
+{
+var z=x1/y1;
+}
+
+document.getElementById("j").innerHtml=z;
+console.log(z);
+
+}
+</script>
+</head>
+<body>
+  firstnumber: <input type="number" id="fnum" name="fnum"><br>
+  secondnumber: <input type="number" id="snum" name="snum"><br>
+
+
+<select name="arithmentic" id="arth">
+  <option value="add">add</option>
+  <option value="sub">sub</option>
+  <option value="mul">multiply</option>
+  <option value="div">divide</option>
+</select>
+<br> 
+<input type="submit" value="submit" onclick= "ari()">
+
+<p id="j">4522412</p>
+
+</body>
+</html>
+
+ 
